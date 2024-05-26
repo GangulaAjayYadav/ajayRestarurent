@@ -8,6 +8,7 @@
 .login-form {
   display: flex;
   flex-direction: column;
+
   padding: 25px;
   border-radius: 12px;
   box-shadow:
@@ -35,7 +36,7 @@
 }
 
 .login-form input {
-  min-height: 320px;
+  min-height: 30px;
   font-family: roboto;
   font-weight: 500;
   font-size: 16px;
@@ -59,4 +60,16 @@
 
 .login-button:hover {
   background-color: #80808070;
+}
+
+.input-feild {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
 }

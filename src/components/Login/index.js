@@ -21,12 +21,12 @@ const Login = props => {
 
   const onSuccessfullLogin = jwtToken => {
     const {history} = props
-    Cookies.set('jwt_token', jwtToken, {expires: 1})
+    Cookies.set('jwt_token', jwtToken, {expires: 30})
     history.replace('/')
   }
 
-  const onFailedLogin = errorMssage => {
-    setErrorMsg(errorMssage)
+  const onFailedLogin = errorMessage => {
+    setErrorMsg(errorMessage)
   }
 
   const onSubmitLogin = async event => {
@@ -41,7 +41,7 @@ const Login = props => {
     const response = await fetch(api, options)
     const data = await response.json()
 
-    if (response.ok) {
+    if (response.ok === true) {
       onSuccessfullLogin(data.jwt_token)
     } else {
       onFailedLogin(data.error_msg)
@@ -62,6 +62,7 @@ const Login = props => {
           type="text"
           onChange={onChangeHandler}
           value={username}
+          className="input-feild"
         />
         <label htmlFor="password">PASSWORD</label>
         <input
@@ -69,6 +70,7 @@ const Login = props => {
           type="password"
           onChange={onChangeHandler}
           value={password}
+          className="input-feild"
         />
         <button type="submit" className="login-button">
           Login

@@ -40,7 +40,7 @@ const Header = props => {
         </p>
         <button
           type="button"
-          className="btn btn-ouline-danger ms-2 me-2 btn-sm"
+          className="btn btn-outline-danger ms-2 me-2 btn-sm"
           onClick={onLoggout}
         >
           Logout

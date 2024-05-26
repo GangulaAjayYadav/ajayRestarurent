@@ -61,7 +61,7 @@
 }
 
 .dish-description {
-  color: #ffffff;
+  color: black;
   font-family: roboto;
   font-weight: 500;
   font-size: 16px;
@@ -70,11 +70,16 @@
 }
 
 .controller-container {
-  width: fit-content;
+  width: 150px;
+  height: 50px;
   min-width: 150px;
   justify-content: space-between;
   padding: 10px;
   border-radius: 50px;
+  background-color: #00923f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .button {

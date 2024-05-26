@@ -37,7 +37,6 @@ const DishItem = ({dishDetails}) => {
       </button>
     </div>
   )
-
   return (
     <li className="mb-3 p-3 dish-item-container d-flex">
       <div

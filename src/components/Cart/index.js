@@ -28,13 +28,13 @@ const Cart = () => {
         <h1>Cart Items</h1>
         <button
           type="button"
-          className="remove-all-btn text-primary"
+          className="remove-all-btn"
           onClick={removeAllCartItems}
         >
           Remove All
         </button>
       </div>
-      <ul className="ps-0 d-flex flex-column align-items-center">
+      <ul className="p-0 d-flex flex-column align-items-center">
         {cartList.map(dish => (
           <CartItem key={dish.dishId} cartItemDetails={dish} />
         ))}
